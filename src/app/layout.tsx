@@ -1,7 +1,9 @@
 'use client'
 
 import Header from '@/layout/header'
-import Home from '@/app/page'
+import Home from '@/app/_home'
+/* import Home from '@/app/home' */
+
 import { AuthProvider, LoadingProvider } from '@/contexts'
 
 const metadata = {
@@ -20,6 +22,7 @@ export const RootLayout = () => {
             <main>
               <Header />
               <Home />
+              {/* {Home()} */}
             </main>
           </LoadingProvider>
         </AuthProvider>
